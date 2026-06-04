@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TestAI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Header / Logo -->
+  <header>
+    <div class="logo">
+      <!-- Sparkle SVG icon matching the purple/blue star in the mockup -->
+      <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 2 L23 17 L38 20 L23 23 L20 38 L17 23 L2 20 L17 17 Z" fill="url(#starGrad)"/>
+        <defs>
+          <linearGradient id="starGrad" x1="2" y1="2" x2="38" y2="38" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#a855f7"/>
+            <stop offset="100%" stop-color="#6366f1"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <span>TestAI</span>
+    </div>
+  </header>
+
+  <!-- Main Layout -->
+  <main>
+
+    <!-- Chat Container (center) -->
+    <div class="chat-wrapper">
+      <div class="chat-box" id="chatBox">
+        <!-- Messages appear here -->
+      </div>
+
+      <!-- Input bar -->
+      <div class="input-bar">
+        <input
+          type="text"
+          id="userInput"
+          placeholder="Ask me anything you want..."
+          autocomplete="off"
+        />
+        <button id="sendBtn" aria-label="Send">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 19V5M5 12l7-7 7 7" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <p class="disclaimer">AI can make mistakes, review content and check sources.</p>
+    </div>
+
+    <!-- Sidebar (right) -->
+    <aside class="sidebar" id="sidebar">
+      <!-- Buttons are injected by script.js from sidebar-items config -->
+    </aside>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
