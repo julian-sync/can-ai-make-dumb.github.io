@@ -1,17 +1,10 @@
 ﻿// ─── Configuration ────────────────────────────────────────────────────────────
-// OpenRouter API key – kostenlos unter https://openrouter.ai/keys erstellen
-// Kein Billing nötig, das Modell unten ist dauerhaft gratis.
 const OPENROUTER_API_KEY = "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";
 
-// Kostenlose Modelle auf OpenRouter (alle enden auf ":free"):
-//   "meta-llama/llama-3.3-70b-instruct:free"   ← sehr gut, empfohlen
-//   "google/gemma-3-27b-it:free"
-//   "mistralai/mistral-7b-instruct:free"
+// OpenRouter Model
 const MODEL = "google/gemma-4-31b-it:free";
 
-// Path to the file whose contents are sent as system prompt.
-// Plain text file in the same directory as index.html.
-// Set to null if you don't need it.
+// Path to the API promt
 const SEND_TO_AI_FILE = "SendToAI.txt";
 
 // Sidebar quick-prompt buttons
