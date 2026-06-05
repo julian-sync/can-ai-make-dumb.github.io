@@ -17,7 +17,7 @@ const SIDEBAR_ITEMS = [
   { label: "AI in School and Homework",prompt: "AI in School and Homework"               },
   { label: "Does AI know what it is doing?", prompt: "Does AI know what it is doing?"   },
   { label: "Conclusion",               prompt: "Give me a conclusion about AI.",
-    sub: "Conclusion = Fazit",          active: true                                     },
+    sub: "Conclusion = Fazitt",          active: true                                     },
 ];
 
 // ─── DOM References ────────────────────────────────────────────────────────────
