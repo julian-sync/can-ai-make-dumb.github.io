@@ -107,7 +107,7 @@ function replaceThinkingWithAnswer(thinkingRow, text) {
 }
 
 function showError(thinkingRow, message) {
-  replaceThinkingWithAnswer(thinkingRow, "⚠️ " + message);
+  replaceThinkingWithAnswer(thinkingRow, "Error: " + message);
 }
 
 // ─── Load SendToAI.txt context ─────────────────────────────────────────────────
@@ -120,7 +120,7 @@ async function loadContext() {
     if (res.ok) {
       systemContext = await res.text();
     } else {
-      console.warn("SendToAI.txt not found. Proceeding without context.");
+      console.warn("SendToAI.txt not found. Proceeding without context (Normal AI).");
     }
   } catch (e) {
     console.warn("SendToAI.txt could not be loaded:", e);
