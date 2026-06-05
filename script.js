@@ -2,7 +2,7 @@
 const OPENROUTER_API_KEY = "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";
 
 // OpenRouter Model
-const MODEL = "google/gemma-4-31b-it:free";
+const MODEL = "google/gemma-4-31b-it:free"; // Start API if you want to use the website
 
 // Path to the API promt
 const SEND_TO_AI_FILE = "SendToAI.txt";
